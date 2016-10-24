@@ -4,7 +4,9 @@ cd $fpath
 git init
 git add .
 git commit -m "first commit"
+echo "Git username:"
+read user
 echo "Name of repo:"
 read reponame
-git remote add origin https://github.com/rlok3000/$reponame.git
+git remote add origin https://github.com/$user/$reponame.git
 git push -u origin master
