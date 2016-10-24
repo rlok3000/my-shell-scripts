@@ -3,5 +3,5 @@ echo "Pushing to stdin"
 git add .
 echo "Commit msg:"
 read commitmsg
-git commit -m $commitmsg
+git commit -m "$commitmsg"
 git push
