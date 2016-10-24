@@ -1,0 +1,10 @@
+echo "Filepath:"
+read fpath
+cd $fpath
+git init
+git add .
+git commit -m "first commit"
+echo "Name of repo:"
+read reponame
+git remote add origin https://github.com/rlok3000/$reponame.git
+git push -u origin master
